@@ -1,0 +1,62 @@
+body {
+    background-size: cover;
+}
+.head {
+    width: 50%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 25px !important;
+    letter-spacing: 2.5px;
+    line-height: 1.6 !important;
+    text-shadow: 3px 0px 7px lightblue;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    from {background-color: #337ab7;}
+    to {background-color: azure;}
+    from {color: white;}
+    to {color: #337ab7;}
+    from {text-shadow: 3px 0px 7px lightblue;}
+    to {text-shadow: -1.5px 0px 0px black;}
+    from {width: 50%;}
+    to {width: 70%;}
+}
+
+#status {
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 7px lightgray;
+    padding-bottom: 10px;
+}
+#result {
+    padding-bottom: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 7px lightgray;
+}
+
+canvas {
+    background-color: lightsteelblue;
+    box-shadow: 1px 1px 10px lightgray;
+    margin-left: 590px;
+    margin-top: 20px;
+    border: 5px solid lightgrey;
+    padding: 5px;
+    width: 300px;
+}
+
+#footer {
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border: 5px solid lightgray;
+    box-shadow: 0px -3px 10px lightgray;
+    text-align: center;
+    line-height: 3;
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+}
