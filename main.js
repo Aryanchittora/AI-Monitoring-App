@@ -1,4 +1,4 @@
-var alarm = "";
+alarm = "";
 objects = [];
 status = "";
 
@@ -41,7 +41,9 @@ function draw() {
         }
         else {
             document.getElementById("result").innerHTML = "Nothing Found";
-            alarm.play();
+            setTimeout(function(){
+                alarm.play();
+            }, 5000);
         }
     }
 }
@@ -64,4 +66,8 @@ function gotresult(error, results) {
         console.log(results);
         objects = results;
     }
+}
+
+function stop_sound() {
+    alarm.stop();
 }
