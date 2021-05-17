@@ -11,7 +11,7 @@ function preload() {
 
 function setup() {
     // Canvas
-    camvas = createCanvas(350, 350);
+    canvas = createCanvas(350, 350);
 
     //Webcam 
     video = createCapture(VIDEO);
